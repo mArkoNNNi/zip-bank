@@ -1,0 +1,80 @@
+.p-blog{
+
+    .b-stories{
+        @include breakpoint(overPhone) {
+            padding-bottom: 0rem;
+        }
+        &__body{
+
+            h2{
+                font-size: 2.5rem;
+
+                @include breakpoint(overPhone) {
+                    font-size: 3.6rem;
+                }
+
+            }
+        }
+
+    }
+    .b-footer{
+        border-top: 2px solid #0A175C;
+       }
+    .b-header{
+        background: #ECECEC;
+    }
+    .b-header.active {
+        background: #fff;
+    }
+     .c-story__date {
+        margin-top: 2.5rem;
+        p{
+            color: $c-brand-secondary;
+        }
+    }
+    .b-hero{
+        background: #ECECEC;
+        overflow: hidden;
+        @include breakpoint(overPhone) {
+            padding-bottom: 8.5rem;
+            padding-top: 8.5rem;
+        }
+        &__block{
+            align-items: flex-start;
+            &--right{
+                order: 1;
+                margin-top: 0rem;
+                margin-bottom: 4rem;
+                @include breakpoint(overPhone) {
+                    margin-bottom: 0rem;
+                }
+            }
+            &--left{
+                order: 2;
+                @include breakpoint(overPhone) {
+                    order: 1;
+                    padding-right: 5%;
+                }
+            }
+        }
+        &__dots{
+            display: none;
+            @include breakpoint(overPhone) {
+                display:block;
+                right: 5%;
+                left: unset;
+            }
+        }
+        &__rectangle {
+            position: absolute;
+            right: unset;
+            top: 72%;
+            left: 0;
+            transform: scaleY(-1) scaleX(-1);
+            @include breakpoint(overPhone){
+                top: 40%;
+            }
+        }
+    }
+
+}

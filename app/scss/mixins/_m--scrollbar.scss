@@ -1,0 +1,20 @@
+@mixin scrollbar(
+	$width: 2px,
+	$colorTrack: transparent,
+	$colorThumb: $c-brand-primary,
+) {
+	/* width */
+	&::-webkit-scrollbar {
+		width: $width;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+		background: $colorTrack;
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background: $colorThumb;
+	}
+}

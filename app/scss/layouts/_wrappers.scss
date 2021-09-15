@@ -1,0 +1,24 @@
+
+
+//----- Wrappers
+$padding: 5.5rem;
+
+.l {
+
+ 
+
+  &--content {
+    max-width: $content-max-width + $padding;
+    padding-right: $padding / 2.75;
+    padding-left: $padding / 2.75;
+    margin-left: auto;
+    margin-right: auto;
+    @include breakpoint(overPhone) {
+      max-width: $content-max-width + $padding;
+      padding-right: $padding / 2;
+      padding-left: $padding / 2;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    @include breakpoint(phone) {
+        padding-top: 0px;
+    }
+  }
+
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 65%;
+    max-width: 1200px;
+    height: 70%;
+    @include breakpoint(phone) {
+        width: 90%;
+        height: 40%;
+    }
+    iframe{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /* The Close Button */
+  .close {
+    color: #0A175C;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    font-size: 32px;
+    font-weight: normal;
+    background: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    z-index: 99;
+    @include breakpoint(overPhone) {
+      top: 10px;
+      right: -50px;
+    }
+}
+
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }

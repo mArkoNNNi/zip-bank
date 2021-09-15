@@ -1,0 +1,27 @@
+.p-quiz{
+    background: #ececec;
+    .b-header{
+        background: #ECECEC;
+        position: relative;
+    }
+    main{
+        margin: 0;
+       overflow-y: auto;
+       @include breakpoint(overPhone) {
+           overflow: hidden;
+       }
+    }
+    .b-header.active {
+        background: #fff;
+    }
+    .c-dropdown-header {
+        @include breakpoint(desktop){ background: white;}
+    
+ }
+ .c-nav-header__item--with-dropdown:hover {
+     @include breakpoint(desktop){ background: white;}
+ }
+ .b-footer{
+     display:none;
+ }
+}

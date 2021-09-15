@@ -1,0 +1,13 @@
+@mixin image-zoom {
+	overflow: hidden;
+
+	&:hover {
+		img {
+			transform: scale(1.25);
+		}
+	}
+
+	img {
+		transition: transform 1s cubic-bezier(0,0,.25,1);
+	}
+}

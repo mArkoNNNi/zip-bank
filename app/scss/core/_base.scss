@@ -3,31 +3,28 @@
 html {
 	font-size: $font-size-base;
 	height: 100%;
-	font-size: 10px;
-	scroll-behavior: smooth;
+
+	&.fixedScroll {
+		overflow: hidden;
+	}
 }
 
 body {
 	font-family: $ff-main;
-	font-weight: $fw-medium;
+	font-weight: $fw-light;
 	-webkit-font-smoothing: antialiased;
 	height: 100%;
 
 	::selection {
-		background: $c-brand-senary;
+		background: $c-brand-primary;
 	}
-	&.overflow{
-		overflow:hidden;
+	&.overflow {
+		overflow: hidden;
 	}
 }
 
 main {
 	overflow: hidden;
-	margin-top: 6rem;
-	@include breakpoint(overPhone) {
-		margin-top: 8rem;
-	}
-    
 }
 
 h1,
@@ -35,12 +32,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {font-weight: $fw-regular; font-family: $ff-secondary;}
+h6 {
+	font-weight: $fw-bold;
+}
 
-p {}
+p {
+}
 
 a {
-	
 }
 
 button,
@@ -62,7 +61,7 @@ button {
 	-webkit-appearance: none;
 }
 
-input[type=button] {
+input[type="button"] {
 	-webkit-appearance: none;
 }
 
@@ -72,27 +71,22 @@ button,
 select,
 label,
 a {
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-::-webkit-input-placeholder { /* Edge */
-	color: $c-brand-quarter;
-	text-transform: uppercase;
-	font-size:1.3rem;
-	letter-spacing: 0.15em;
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-	color: $c-brand-quarter;
-	text-transform: uppercase;
-	font-size:1.3rem;
-	letter-spacing: 0.15em;
-  }
-  
-  ::placeholder {
-	color: $c-brand-quarter;
-	text-transform: uppercase;
-	font-size:1.3rem;
-	letter-spacing: 0.15em;
-  }
- 
+::-webkit-input-placeholder {
+	/* Edge */
+	color: $c-brand-primary;
+	font-size: 1.8rem;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: $c-brand-primary;
+	font-size: 1.8rem;
+}
+
+::placeholder {
+	color: $c-brand-primary;
+	font-size: 1.8rem;
+}

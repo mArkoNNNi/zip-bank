@@ -9,17 +9,12 @@ $fw-bold: 700;
 
 //----- Font face
 // @include fontFace (FontName, FontFileName, 700, italic);
-@include fontFace (Poppins, Poppins-Bold, $fw-bold, normal, woff woff2);
-@include fontFace (Poppins, Poppins-SemiBold, $fw-semibold, normal, woff woff2);
-@include fontFace (Poppins, Poppins-Medium, $fw-medium, normal, woff woff2);
-@include fontFace (Anton, Anton-Regular, $fw-regular, normal, woff woff2);
+@include fontFace(PublicSans, PublicSans-Bold, $fw-bold, normal, woff woff2);
+@include fontFace(PublicSans, PublicSans-Light, $fw-light, normal, woff woff2);
 
 //----- Font family
-$fontDefault: 'Poppins', Arial, sans-serif;
+$fontDefault: "PublicSans", Arial, sans-serif;
 $ff-main: $fontDefault;
-
-$fontsecondary: 'Anton', Arial, sans-serif;
-$ff-secondary: $fontsecondary;
 
 //----- Font size
 $font-size-base: 10px;

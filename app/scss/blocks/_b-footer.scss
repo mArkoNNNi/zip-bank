@@ -1,0 +1,44 @@
+.b-footer {
+    background-color: $c-brand-primary;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .c-paragraph {
+        a {
+            color: $c-white;
+            margin-bottom: 4rem;
+            display: block;
+            @include breakpoint(overPhone) {
+                margin-right: 5rem;
+                margin-bottom: 0rem;
+            }
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &:last-of-type {
+            margin-left: auto;
+            color: #bebebe;
+            margin-right: 0rem;
+            margin-top: 3rem;
+            @include breakpoint(overPhone) {
+                margin-top: 0rem;
+            }
+        }
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoint(overPhone) {
+            flex-direction: row;
+        }
+    }
+    &__logo {
+        margin-bottom: 4rem;
+        @include breakpoint(overPhone) {
+            margin-right: 5.3rem;
+            margin-bottom: 0rem;
+        }
+    }
+}

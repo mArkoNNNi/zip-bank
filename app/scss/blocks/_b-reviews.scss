@@ -1,0 +1,39 @@
+.b-reviews {
+    background-color: $c-brand-quarter;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include breakpoint(overPhone) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    h2 {
+        text-align: center;
+        max-width: 60rem;
+        @include center-block;
+        margin-bottom:5rem;
+        @include breakpoint(overPhone) {
+            margin-bottom: 10rem;
+        }
+    }
+    &__media {
+        max-width: 120rem;
+        img {
+            border-radius: 1rem;
+            width: 100%;
+        }
+        &-container {
+            position: relative;
+            margin-bottom: 7rem;
+            @include breakpoint(overPhone) {
+                margin-bottom: 10rem;
+            }
+            h2 {
+                @include absolute(center);
+                max-width: 40rem;
+                width: 60%;
+                text-align: center;
+                color: $c-white;
+            }
+        }
+    }
+}

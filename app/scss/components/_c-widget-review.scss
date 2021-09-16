@@ -1,0 +1,30 @@
+.c-widget-review {
+    max-width: 33.5rem;
+    background-color: $c-white;
+    padding: 3rem;
+    @include breakpoint(overPhone) {
+        max-width: 30rem;
+    }
+    &__media {
+        max-width: 7.5rem;
+        margin-bottom: 2rem;
+        img {
+            border-radius: 100%;
+            width: 100%;
+        }
+        @include breakpoint(overPhone) {
+            max-width: 7rem;
+        }
+    }
+    &__stars {
+        margin-bottom: 2rem;
+    }
+    .c-paragraph {
+        margin-bottom: 3rem;
+    }
+    &__name {
+        @extend .c-paragraph-size--primary;
+        font-weight: $fw-bold;
+        color: $c-brand-primary;
+    }
+}

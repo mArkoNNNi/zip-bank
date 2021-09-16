@@ -1,0 +1,102 @@
+.b-cta {
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    background-color: $c-white;
+    position: relative;
+    @include breakpoint(overPhone) {
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+    }
+    .c-paragraph {
+        margin-bottom: 4rem;
+        @include breakpoint(overPhone) {
+            margin-bottom: 4.8rem;
+            padding-right: 12rem;
+        }
+    }
+    &__bonus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint(overPhone) {
+            justify-content: flex-start;
+            padding-left: 1rem;
+        }
+        .c-paragraph {
+            margin-bottom: 0;
+        }
+        &-media {
+            margin-right: 0.8rem;
+        }
+    }
+    &__body {
+        display: block;
+        position: relative;
+        z-index: 10;
+        @include breakpoint(overPhone) {
+            display: flex;
+        }
+    }
+    .b-hero--right-column {
+        .b-hero__media {
+            max-width: 22.2rem;
+            @include breakpoint(overPhone) {
+                max-width: 51.2rem;
+            }
+            &-stripe {
+                svg {
+                    position: absolute;
+                    right: 0rem;
+                    bottom: -3.5rem;
+                    @include breakpoint(overPhone) {
+                        top: 0;
+                        bottom: 0;
+                    }
+                    &:first-child {
+                        @include breakpoint(phone) {
+                            width: 53rem;
+                            height: 19rem;
+                        }
+                    }
+                    &:last-child {
+                        @include breakpoint(phone) {
+                            width: 42.9rem;
+                            height: 21.2rem;
+                        }
+                    }
+                }
+            }
+        }
+        @include breakpoint(overPhone) {
+            position: absolute;
+            top: -18.5rem;
+            right: 0;
+            padding: 0;
+        }
+    }
+    .b-hero__media {
+        &-stripe {
+            svg {
+                position: absolute;
+                right: 0rem;
+                bottom: 9.5rem;
+                @include breakpoint(overPhone) {
+                    top: 0;
+                    bottom: 0;
+                }
+                &:first-child {
+                    @include breakpoint(phone) {
+                        width: 53rem;
+                        height: 19rem;
+                    }
+                }
+                &:last-child {
+                    @include breakpoint(phone) {
+                        width: 42.9rem;
+                        height: 21.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

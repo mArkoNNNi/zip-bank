@@ -1,0 +1,41 @@
+.slider-reviews {
+    max-width: 100rem;
+}
+.c-review-slider {
+    position: relative;
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 2.4rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        border: 1px solid #351741;
+        color: #351741;
+        border-radius: 100%;
+        width: 5rem;
+        height: 5rem;
+        @include breakpoint(phone) {
+            display: none;
+        }
+    }
+    .swiper-pagination .swiper-pagination-bullet {
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid #959aa9;
+        @include breakpoint(overPhone) {
+            display: none;
+        }
+        &:after {
+            background: $c-brand-primary;
+            width: 1rem;
+            height: 1rem;
+        }
+        &.swiper-pagination-bullet-active {
+            border: 2px solid $c-brand-primary;
+        }
+    }
+    .swiper-pagination {
+        margin-top: 4rem;
+    }
+}

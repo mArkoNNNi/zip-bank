@@ -1,0 +1,33 @@
+.b-clients {
+    background-color: $c-white;
+    padding-top: 3.5rem;
+    padding-bottom: 4.5rem;
+    text-align: center;
+    @include breakpoint(overPhone) {
+        padding-top: 4rem;
+        padding-bottom: 8rem;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem 2rem;
+        @include breakpoint(overPhone) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0rem 5rem;
+            margin-left: 11rem;
+        }
+    }
+    &__media {
+        margin: 0 auto;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100rem;
+        padding:0;
+        @include breakpoint(overPhone) {
+            flex-direction: row;
+        }
+    }
+}

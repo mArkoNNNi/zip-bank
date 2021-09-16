@@ -1,0 +1,14 @@
+.c-widget-feature {
+    max-width: 25rem;
+    text-align: center;
+    margin-bottom: 7rem;
+    @include breakpoint(overPhone) {
+        margin-right: 7rem;
+        margin-bottom: 0;
+        max-width: 32rem;
+    }
+    &:last-of-type {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}

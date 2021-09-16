@@ -45,11 +45,20 @@
             margin-bottom: 0;
             width: 50%;
         }
+        @include breakpoint(tablet) {
+            margin-bottom: 0;
+            width: 60%;
+        }
     }
     &--right-column {
         @include breakpoint(overPhone) {
             padding-top: 2.4rem;
             width: 50%;
+            padding-left: 3rem;
+        }
+        @include breakpoint(tablet) {
+            padding-top: 2.4rem;
+            width: 40%;
             padding-left: 3rem;
         }
     }
@@ -63,6 +72,10 @@
                 bottom: -8.5rem;
                 @include breakpoint(overPhone) {
                     top: 0;
+                    bottom: 0;
+                }
+                @include breakpoint(tablet) {
+                    top: -20rem;
                     bottom: 0;
                 }
                 &:first-child {

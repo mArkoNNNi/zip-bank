@@ -15,7 +15,7 @@
         border-radius: 100%;
         width: 5rem;
         height: 5rem;
-        @include breakpoint(phone) {
+        @include breakpoint(toTabletLandscape) {
             display: none;
         }
     }
@@ -23,7 +23,7 @@
         width: 2rem;
         height: 2rem;
         border: 2px solid #959aa9;
-        @include breakpoint(overPhone) {
+        @include breakpoint(desktop) {
             display: none;
         }
         &:after {

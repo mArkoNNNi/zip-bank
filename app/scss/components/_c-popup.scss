@@ -29,9 +29,11 @@
         @include breakpoint(overPhone) {
             max-width: 8.7rem;
             left: 12rem;
+            position:absolute;
         }
     }
     .b-hero {
+        position: relative;
         &__body {
             align-items: center;
         }
@@ -57,6 +59,7 @@
             margin: 0 auto;
             &-stripe {
                 svg {
+                    top: 0;
                     &:first-child {
                         @include breakpoint(phone) {
                             width: 43.1rem;

@@ -16,6 +16,11 @@
             gap: 0rem 5rem;
             margin-left: 11rem;
         }
+        @include breakpoint(tablet) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem 5rem;
+            margin-left: 8rem;
+        }
     }
     &__media {
         margin: 0 auto;
@@ -28,6 +33,9 @@
         padding:0;
         @include breakpoint(overPhone) {
             flex-direction: row;
+        }
+        @include breakpoint(tablet) {
+           justify-content: center;
         }
     }
 }

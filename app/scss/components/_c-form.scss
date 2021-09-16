@@ -76,5 +76,12 @@
             left: 15rem;
             max-width: 18rem;
         }
+        @include breakpoint(tablet) {
+            position: relative;
+            left:-2rem;
+            font-size: 1.6rem;
+            line-height: 2.3rem;
+            max-width: 14rem;
+        }
     }
 }

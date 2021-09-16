@@ -7,16 +7,17 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 100vh;
-    @include breakpoint(overPhone) {
-        background-position-y: 80%;
-    }
     position: relative;
-    @include breakpoint(overPhone) {
+    @include breakpoint(desktop) {
         padding-top: 10rem;
         padding-bottom: 10rem;
+        background-position-y: 80%;
     }
     &__media {
         max-width: 70rem;
+        @include breakpoint(tablet) {
+            max-width: 65rem;
+        }
     }
     h2 {
         text-align: center;

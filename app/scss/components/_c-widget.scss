@@ -27,11 +27,18 @@
         padding: 2rem;
         max-width: 28.5rem;
         margin-top: -2rem;
-        @include breakpoint(overPhone) {
+
+        @include breakpoint(desktop) {
             padding: 5rem;
             position: absolute;
             right: 0rem;
             max-width: 56rem;
+        }
+        @include breakpoint(tablet) {
+            padding: 5rem;
+            position: absolute;
+            right: 0rem;
+            max-width: 35rem;
         }
         h3 {
             padding-bottom: 2.5rem;

@@ -216,7 +216,7 @@ a {
     border-radius: 100%;
     width: 5rem;
     height: 5rem; }
-    @media (max-width: 767px) {
+    @media (max-width: 1023px) {
       .c-review-slider .swiper-button-prev,
       .c-review-slider .swiper-button-next {
         display: none; } }
@@ -224,7 +224,7 @@ a {
     width: 2rem;
     height: 2rem;
     border: 2px solid #959aa9; }
-    @media (min-width: 768px) {
+    @media (min-width: 1025px) {
       .c-review-slider .swiper-pagination .swiper-pagination-bullet {
         display: none; } }
     .c-review-slider .swiper-pagination .swiper-pagination-bullet:after {
@@ -793,10 +793,18 @@ button.swiper-pagination-bullet {
       .c-title-size--primary {
         font-size: 5.5rem;
         line-height: 6.5rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .c-title-size--primary {
+        font-size: 4.5rem;
+        line-height: 5.5rem; } }
   .c-title-size--secondary {
     font-size: 2rem;
     line-height: 3rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .c-title-size--secondary {
+        font-size: 2.2rem;
+        line-height: 3rem; } }
+    @media (min-width: 1025px) {
       .c-title-size--secondary {
         font-size: 3.5rem;
         line-height: 4.1rem; } }
@@ -908,6 +916,13 @@ button.swiper-pagination-bullet {
         top: 0rem;
         left: 15rem;
         max-width: 18rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .c-form__submit {
+        position: relative;
+        left: -2rem;
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+        max-width: 14rem; } }
 
 .c-widget {
   display: flex;
@@ -935,12 +950,18 @@ button.swiper-pagination-bullet {
     padding: 2rem;
     max-width: 28.5rem;
     margin-top: -2rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 1025px) {
       .c-widget__content {
         padding: 5rem;
         position: absolute;
         right: 0rem;
         max-width: 56rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .c-widget__content {
+        padding: 5rem;
+        position: absolute;
+        right: 0rem;
+        max-width: 35rem; } }
     .c-widget__content h3 {
       padding-bottom: 2.5rem;
       margin-bottom: 2.5rem;
@@ -1042,8 +1063,10 @@ button.swiper-pagination-bullet {
   @media (min-width: 768px) {
     .c-popup .c-form__submit {
       max-width: 8.7rem;
-      left: 12rem; } }
+      left: 12rem;
+      position: absolute; } }
   .c-popup .b-hero {
+    position: relative;
     padding-top: 6rem;
     padding-bottom: 6rem; }
     .c-popup .b-hero__body {
@@ -1063,16 +1086,18 @@ button.swiper-pagination-bullet {
     .c-popup .b-hero__media {
       max-width: 27rem;
       margin: 0 auto; }
-      @media (max-width: 767px) {
-        .c-popup .b-hero__media-stripe svg:first-child {
-          width: 43.1rem;
-          height: 21.4rem;
-          bottom: 16rem; } }
-      @media (max-width: 767px) {
-        .c-popup .b-hero__media-stripe svg:last-child {
-          width: 38.7rem;
-          height: 27.7rem;
-          bottom: 10rem; } }
+      .c-popup .b-hero__media-stripe svg {
+        top: 0; }
+        @media (max-width: 767px) {
+          .c-popup .b-hero__media-stripe svg:first-child {
+            width: 43.1rem;
+            height: 21.4rem;
+            bottom: 16rem; } }
+        @media (max-width: 767px) {
+          .c-popup .b-hero__media-stripe svg:last-child {
+            width: 38.7rem;
+            height: 27.7rem;
+            bottom: 10rem; } }
   .c-popup__close {
     position: absolute;
     right: 2.5rem;
@@ -1126,10 +1151,19 @@ button.swiper-pagination-bullet {
       .b-hero--left-column {
         margin-bottom: 0;
         width: 50%; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .b-hero--left-column {
+        margin-bottom: 0;
+        width: 60%; } }
   @media (min-width: 768px) {
     .b-hero--right-column {
       padding-top: 2.4rem;
       width: 50%;
+      padding-left: 3rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .b-hero--right-column {
+      padding-top: 2.4rem;
+      width: 40%;
       padding-left: 3rem; } }
   .b-hero__media {
     max-width: 49.6rem;
@@ -1141,6 +1175,10 @@ button.swiper-pagination-bullet {
       @media (min-width: 768px) {
         .b-hero__media-stripe svg {
           top: 0;
+          bottom: 0; } }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        .b-hero__media-stripe svg {
+          top: -20rem;
           bottom: 0; } }
       @media (max-width: 767px) {
         .b-hero__media-stripe svg:first-child {
@@ -1169,6 +1207,11 @@ button.swiper-pagination-bullet {
         grid-template-columns: repeat(4, 1fr);
         gap: 0rem 5rem;
         margin-left: 11rem; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .b-clients__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem 5rem;
+        margin-left: 8rem; } }
   .b-clients__media {
     margin: 0 auto; }
   .b-clients__body {
@@ -1180,6 +1223,9 @@ button.swiper-pagination-bullet {
     @media (min-width: 768px) {
       .b-clients__body {
         flex-direction: row; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .b-clients__body {
+        justify-content: center; } }
 
 .b-key-features {
   padding-top: 5rem;
@@ -1191,15 +1237,16 @@ button.swiper-pagination-bullet {
   background-size: contain;
   background-position-y: 100vh;
   position: relative; }
-  @media (min-width: 768px) {
-    .b-key-features {
-      background-position-y: 80%; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .b-key-features {
       padding-top: 10rem;
-      padding-bottom: 10rem; } }
+      padding-bottom: 10rem;
+      background-position-y: 80%; } }
   .b-key-features__media {
     max-width: 70rem; }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .b-key-features__media {
+        max-width: 65rem; } }
   .b-key-features h2 {
     text-align: center;
     max-width: 70rem;
@@ -1232,7 +1279,7 @@ button.swiper-pagination-bullet {
 .b-features {
   padding-top: 5rem;
   padding-bottom: 5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .b-features {
       padding-top: 10rem;
       padding-bottom: 10rem; } }
@@ -1255,7 +1302,7 @@ button.swiper-pagination-bullet {
   background-color: #FAFAFA;
   padding-top: 5rem;
   padding-bottom: 5rem; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .b-reviews {
       padding-top: 10rem;
       padding-bottom: 10rem; } }
@@ -1299,10 +1346,14 @@ button.swiper-pagination-bullet {
   padding-bottom: 0rem;
   background-color: #fff;
   position: relative; }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .b-cta {
       padding-top: 9rem;
       padding-bottom: 9rem; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .b-cta {
+      padding-top: 5rem;
+      padding-bottom: 0rem; } }
   .b-cta .c-paragraph {
     margin-bottom: 4rem; }
     @media (min-width: 768px) {
@@ -1349,19 +1400,32 @@ button.swiper-pagination-bullet {
         .b-cta .b-hero--right-column .b-hero__media-stripe svg:last-child {
           width: 42.9rem;
           height: 21.2rem; } }
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     .b-cta .b-hero--right-column {
       position: absolute;
       top: -18.5rem;
       right: 0;
       padding: 0; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .b-cta .b-hero--right-column {
+      position: absolute;
+      right: 0;
+      padding: 0;
+      bottom: 0; } }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .b-cta .b-hero--left-column {
+      padding-bottom: 5rem; } }
   .b-cta .b-hero__media-stripe svg {
     position: absolute;
     right: 0rem;
     bottom: 9.5rem; }
-    @media (min-width: 768px) {
+    @media (min-width: 1025px) {
       .b-cta .b-hero__media-stripe svg {
         top: 0;
+        bottom: 0; } }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .b-cta .b-hero__media-stripe svg {
+        top: -20rem;
         bottom: 0; } }
     @media (max-width: 767px) {
       .b-cta .b-hero__media-stripe svg:first-child {
